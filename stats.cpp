@@ -26,6 +26,7 @@ static const std::map<std::string, std::string> mapAR =
         { "paro", "RScDpTu2m23qrufjpK5nh2M6M3x2L8pLuo" },
         { "titomane", "RGKeqvDvbLrGTyEYpEZMJFNK1dW2GnxmnB" },
         { "tonyl", "RNWUrfBmdRmKogYq8ss73UCrP3ipmT54A8" },
+        { "strob", "RStrobARDwHKBDntCa2Ko6oi91n4YMpgSB" },
 };
 
 static const std::map<std::string, std::string> mapEU = 
@@ -42,6 +43,10 @@ static const std::map<std::string, std::string> mapEU =
         { "slyris", "RXQYUDdVM2tf4bSE8Z2Duw6sfF8JDyVcKx" },
         { "smdmitry", "RSMDmitryCzhPJkKCZVAJi2XyudqP4Tfzq" },
         { "titomane", "RSxsxyT5fqX3D3LzexGdUTNvs6zyKbyBD9" },
+        { "block9", "RSmMfwnBZJtjqBjnEYF2dyCquXJvk1bK2Q" },
+        { "strob", "RStrobEUa7sHUamRfaWyX8DN2bpKiq9YPZ" },
+        { "madmax", "RLTvCWLwQyyoeoouVjdg7gvEAYNvSyypmC" },
+        
 };
 
 static const std::map<std::string, std::string> mapNA = 
@@ -57,6 +62,8 @@ static const std::map<std::string, std::string> mapNA =
         { "ptyx", "RHZAnQxv6tGajPppWywpkP5W8JXQR3QEvi" },
         { "rustytwilight", "RUpsdjVayPNBBwAJS3idFbXxUKZTLS185u" },
         { "theerbeen", "RXbwWvgd3RoMVmxwvHqBMDPTt33CxN6nzP" },
+        { "strob", "RStrobNmEspEAgB8Jtt6ncK8tCWcGm77na" },
+        { "madmax", "RUkXigRwEwc18wvzP6UXBgL3dPhAYMVK1j" },
 };
 
 static const std::map<std::string, std::string> mapSH = 
@@ -72,6 +79,7 @@ static const std::map<std::string, std::string> mapSH =
         { "titomane", "REjTMBjhhdnWkiMfBAjuBZUpBvTH4wwcwt" },
         { "workax", "RPvzKxby2fU5zm4q5ySrNdh3NbjgeMcw47" },
         { "zatjum", "RJUM5a3vnajE9fZ5piDGcxvDyryUAHxhKj" },
+        { "strob", "RStrobSH68ke1eFmxNehVuJczTEpFX3C4f" },
         
 };
 
