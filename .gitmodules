@@ -1,0 +1,6 @@
+[submodule "curlite"]
+	path = curlite
+	url = https://github.com/grynko/curlite
+[submodule "rapidjson"]
+	path = rapidjson
+	url = https://github.com/Tencent/rapidjson
