@@ -90,6 +90,8 @@ const std::string rpcuser = "user2221517864";
 const std::string rpcpassword = "pass428e1eb1b70448774f7e04a4d39c8624caa769a5256a4e00d3323b040f440ddacb";
 const uint16_t rpcport=55638;
 
+const bool fHTML = true;
+
 typedef int64_t CAmount;
 static const CAmount COIN = 100000000;
 static const CAmount CENT = 1000000;
@@ -175,10 +177,22 @@ uint64_t getbalance(const std::string &address) {
 
 void print_region(const std::string &region, const std::map<std::string, std::string>& mapregion)
 {
-    std::cout <<  region <<std::endl;
-    std::cout << std::endl;
-
-    // Header
+    if (!fHTML) {
+        std::cout <<  region <<std::endl;
+        std::cout << std::endl;
+    } else {
+        std::cout << strprintf("<h3>%s</h3>", region) << std::endl;
+        std::cout << "<table class=\"table\">" << std::endl;
+        std::cout << "    <thead class=\"thead-dark\">\n\
+        <tr>\n\
+            <th scope=\"col\">#</th>\n\
+            <th scope=\"col\">Node</th>\n\
+            <th scope=\"col\">Address</th>\n\
+            <th scope=\"col\">Balance</th>\n\
+        </tr>\n\
+    </thead>\n\
+    <tbody>" << std::endl;
+    }
 
     std::map<std::string, CAmount> balances;
     std::vector<std::pair<std::string, CAmount> > vbalances;
@@ -192,9 +206,24 @@ void print_region(const std::string &region, const std::map<std::string, std::st
     uint32_t count = 0;
     for (const auto entry : vbalances) {
         std::string address = mapregion.at(entry.first);
-        std::cout << strprintf("%lu.\t%20s\t%-34s\t%20s VOTE2021", ++count, entry.first, address, ValueFromAmount(entry.second)) << std::endl;
+        if (!fHTML) {
+            std::cout << strprintf("%lu.\t%20s\t%-34s\t%20s VOTE2021", ++count, entry.first, address, ValueFromAmount(entry.second)) << std::endl;
+        } else {
+                std::cout << strprintf("        <tr>\n\
+            <th scope=\"row\">%lu</th>\n\
+            <td><a href=\"https://github.com/KomodoPlatform/NotaryNodes/blob/master/season5/candidates/%s/README.md\" target=\"_blank\">%s</a></td>\n\
+            <td><a href=\"https://vote.kmdexplorer.io/address/%s\" target=\"_blank\">%s</a></td>\n\
+            <td>%s</td>\n\
+        </tr>", ++count, entry.first, entry.first, address, address, ValueFromAmount(entry.second)) << std::endl;
+        }
     }
-    std::cout << std::endl;
+
+    if (!fHTML) {
+        std::cout << std::endl;
+    } else {
+        std::cout << "    </tbody>\n\
+</table>" << std::endl;
+    }
 }
 
 int main() 
@@ -205,15 +234,36 @@ int main()
     //     std::cout << entry.first << " :: " << entry.second << std::endl;
     // std::cout << std::endl;
     
-    // std::cout << "<!-- -->" << std::endl;
+    if (fHTML) {
+        std::cout << "<!doctype html>\n\
+<html lang=\"en\">\n\
+<head>\n\
+<meta charset=\"utf-8\">\n\
+<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, shrink-to-fit=no\">\n\
+<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\n\
+</head>\n\
+<body>" << std::endl;
+        std::cout << "<div class=\"container\">" << std::endl;
+        std::cout << "<div class=\"row\">" << std::endl;
+        std::cout << "<div class=\"col-lg\">" << std::endl;
+        std::cout << "<h2>VOTE2021 Results</h2>" << std::endl;
+    }
+
     print_region("AR", mapAR);
-    // std::cout << "<!-- -->" << std::endl;
     print_region("EU", mapEU);
-    // std::cout << "<!-- -->" << std::endl;
     print_region("NA", mapNA);
-    // std::cout << "<!-- -->" << std::endl;
     print_region("SH", mapSH);
-    // std::cout << "<!-- -->" << std::endl;
+
+    if (fHTML) {
+        std::cout << "</div><!-- col-lg -->\n\
+</div><!-- row -->\n\
+</div><!-- container -->\n\
+<!-- Optional JavaScript -->\n\
+<script src=\"https://code.jquery.com/jquery-3.3.1.slim.min.js\" integrity=\"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo\" crossorigin=\"anonymous\"></script>\n\
+<script src=\"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js\" integrity=\"sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49\" crossorigin=\"anonymous\"></script>\n\
+<script src=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js\" integrity=\"sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy\" crossorigin=\"anonymous\"></script>\n\
+</body></html>" << std::endl;
+    }
 
     return 0;
 }
