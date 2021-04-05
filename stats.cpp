@@ -34,7 +34,7 @@ static const std::map<std::string, std::string> mapEU =
 {
         { "decker", "RAE43rkzYV3YQ5QcR3twTtNxEkQb8RNrBf" },
         { "alien", "REUke3f6vVQiy6FjStpfRt4HUR9jmGxqED" },
-        { "chmex", "RBJGGzKhP7YWoPBoi5AKPm2VJEGy4oodQy" },
+//      { "chmex", "RBJGGzKhP7YWoPBoi5AKPm2VJEGy4oodQy" },
         { "dappvader", "RV6TYQ94Sfv1jcapxDJ11n23nNouutn7wn" },
         { "donromero", "RA4TWrEt4YM5trAvhKh79SS8xEcoKHC9SZ" },
         { "fairbanksy", "RDaM2MQsXcwjWBaPCyWgSosMSQ6A5kBGx2" },
