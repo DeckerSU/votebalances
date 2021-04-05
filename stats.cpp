@@ -187,7 +187,7 @@ void print_region(const std::string &region, const std::map<std::string, std::st
         <tr>\n\
             <th scope=\"col\">#</th>\n\
             <th scope=\"col\">Node</th>\n\
-            <th scope=\"col\">Address</th>\n\
+            <th scope=\"col\" class=\"d-none d-lg-table-cell\">Address</th>\n\
             <th scope=\"col\">Balance</th>\n\
         </tr>\n\
     </thead>\n\
@@ -212,7 +212,7 @@ void print_region(const std::string &region, const std::map<std::string, std::st
                 std::cout << strprintf("        <tr>\n\
             <th scope=\"row\">%lu</th>\n\
             <td><a href=\"https://github.com/KomodoPlatform/NotaryNodes/blob/master/season5/candidates/%s/README.md\" target=\"_blank\">%s</a></td>\n\
-            <td><a href=\"https://vote.kmdexplorer.io/address/%s\" target=\"_blank\">%s</a></td>\n\
+            <td class=\"d-none d-lg-table-cell\"><a href=\"https://vote.kmdexplorer.io/address/%s\" target=\"_blank\">%s</a></td>\n\
             <td>%s</td>\n\
         </tr>", ++count, entry.first, entry.first, address, address, ValueFromAmount(entry.second)) << std::endl;
         }
@@ -243,19 +243,25 @@ int main()
 <link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css\" integrity=\"sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO\" crossorigin=\"anonymous\">\n\
 </head>\n\
 <body>" << std::endl;
-        std::cout << "<div class=\"container\">" << std::endl;
+        std::cout << "<div class=\"container-sm p-4\">" << std::endl;
         std::cout << "<div class=\"row\">" << std::endl;
-        std::cout << "<div class=\"col-lg\">" << std::endl;
-        std::cout << "<h2>VOTE2021 Results</h2>" << std::endl;
+        //std::cout << "<h2>VOTE2021 Results</h2>" << std::endl;
+        std::cout << "<div class=\"col-sm-6\">" << std::endl;
     }
 
     print_region("AR", mapAR);
     print_region("EU", mapEU);
+
+    if (fHTML) {
+        std::cout << "</div><!-- col-sm -->\n\
+        <div class=\"col-sm-6\">" << std::endl;
+    }
+
     print_region("NA", mapNA);
     print_region("SH", mapSH);
 
     if (fHTML) {
-        std::cout << "</div><!-- col-lg -->\n\
+        std::cout << "</div><!-- col-sm -->\n\
 </div><!-- row -->\n\
 </div><!-- container -->\n\
 <!-- Optional JavaScript -->\n\
