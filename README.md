@@ -27,4 +27,20 @@ g++ -g stats.cpp curlite/curlite.cpp utilstrencodings.cpp -std=c++11 -I./rapidjs
 
 ## Output example
 
+### HTML
 ![GitHub Logo](/images/output.jpg)
+### Plain text
+For plain-text output set the following variable to false:
+```
+const bool fHTML = false;
+```
+Result will be like this:
+```
+AR
+
+1.	               ocean	R9Jny2pGVYVLjfxsiYCYtf7C6fgd3zxNH6	       2694.39153781 VOTE2021
+2.	              decker	RHeRFNk2jih5oFedJpgFXx8wPANv5iiFg7	       2000.35000000 VOTE2021
+3.	           dudezmobi	RA7VoAW811sZS6CPaM3CwS4VyNyLzmNcKy	         86.99995000 VOTE2021
+4.	                kolo	RKCXF7EYaAJHmiyDKmubhQ88dYc7CbTZxx	         76.19995000 VOTE2021
+5.	                paro	RScDpTu2m23qrufjpK5nh2M6M3x2L8pLuo	          0.06112091 VOTE2021
+```
