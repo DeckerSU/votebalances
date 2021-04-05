@@ -26,7 +26,7 @@ static const std::map<std::string, std::string> mapAR =
         { "paro", "RScDpTu2m23qrufjpK5nh2M6M3x2L8pLuo" },
         { "titomane", "RGKeqvDvbLrGTyEYpEZMJFNK1dW2GnxmnB" },
         { "tonyl", "RNWUrfBmdRmKogYq8ss73UCrP3ipmT54A8" },
-        { "strob", "RStrobARDwHKBDntCa2Ko6oi91n4YMpgSB" },
+//      { "strob", "RStrobARDwHKBDntCa2Ko6oi91n4YMpgSB" },
 };
 
 static const std::map<std::string, std::string> mapEU = 
@@ -44,7 +44,7 @@ static const std::map<std::string, std::string> mapEU =
         { "smdmitry", "RSMDmitryCzhPJkKCZVAJi2XyudqP4Tfzq" },
         { "titomane", "RSxsxyT5fqX3D3LzexGdUTNvs6zyKbyBD9" },
         { "block9", "RSmMfwnBZJtjqBjnEYF2dyCquXJvk1bK2Q" },
-        { "strob", "RStrobEUa7sHUamRfaWyX8DN2bpKiq9YPZ" },
+//      { "strob", "RStrobEUa7sHUamRfaWyX8DN2bpKiq9YPZ" },
         { "madmax", "RLTvCWLwQyyoeoouVjdg7gvEAYNvSyypmC" },
         
 };
@@ -64,6 +64,7 @@ static const std::map<std::string, std::string> mapNA =
         { "theerbeen", "RXbwWvgd3RoMVmxwvHqBMDPTt33CxN6nzP" },
         { "strob", "RStrobNmEspEAgB8Jtt6ncK8tCWcGm77na" },
         { "madmax", "RUkXigRwEwc18wvzP6UXBgL3dPhAYMVK1j" },
+        { "webworker01", "RLqnbAwfucQEcSzcBXEXAavLTtL1FrWxqJ" },
 };
 
 static const std::map<std::string, std::string> mapSH = 
@@ -80,6 +81,7 @@ static const std::map<std::string, std::string> mapSH =
         { "workax", "RPvzKxby2fU5zm4q5ySrNdh3NbjgeMcw47" },
         { "zatjum", "RJUM5a3vnajE9fZ5piDGcxvDyryUAHxhKj" },
         { "strob", "RStrobSH68ke1eFmxNehVuJczTEpFX3C4f" },
+        { "sheeba", "RR7CECKj4aT7BC7Exq6a5AteVoPRyHEFyx" },
         
 };
 
@@ -171,8 +173,13 @@ uint64_t getbalance(const std::string &address) {
     return balance;
 }
 
-void print_region(const std::map<std::string, std::string>& mapregion) 
+void print_region(const std::string &region, const std::map<std::string, std::string>& mapregion)
 {
+    std::cout <<  region <<std::endl;
+    std::cout << std::endl;
+
+    // Header
+
     std::map<std::string, CAmount> balances;
     std::vector<std::pair<std::string, CAmount> > vbalances;
     balances.clear(); vbalances.clear();
@@ -184,8 +191,8 @@ void print_region(const std::map<std::string, std::string>& mapregion)
 
     uint32_t count = 0;
     for (const auto entry : vbalances) {
-
-        std::cout << strprintf("%lu. %-20s\t%20s VOTE2021", ++count, entry.first, ValueFromAmount(entry.second)) << std::endl;
+        std::string address = mapregion.at(entry.first);
+        std::cout << strprintf("%lu.\t%20s\t%-34s\t%20s VOTE2021", ++count, entry.first, address, ValueFromAmount(entry.second)) << std::endl;
     }
     std::cout << std::endl;
 }
@@ -198,19 +205,15 @@ int main()
     //     std::cout << entry.first << " :: " << entry.second << std::endl;
     // std::cout << std::endl;
     
-    // std::cout << mapAR.at("decker") << std::endl;
-    // std::cout << ValueFromAmount(getbalance(mapAR.at("decker"))) << std::endl;
-
-    print_region(mapAR);
-    std::cout << "---" << std::endl;
-    print_region(mapEU);
-    std::cout << "---" << std::endl;
-    print_region(mapNA);
-    std::cout << "---" << std::endl;
-    print_region(mapSH);
-
-
-    
+    // std::cout << "<!-- -->" << std::endl;
+    print_region("AR", mapAR);
+    // std::cout << "<!-- -->" << std::endl;
+    print_region("EU", mapEU);
+    // std::cout << "<!-- -->" << std::endl;
+    print_region("NA", mapNA);
+    // std::cout << "<!-- -->" << std::endl;
+    print_region("SH", mapSH);
+    // std::cout << "<!-- -->" << std::endl;
 
     return 0;
 }
