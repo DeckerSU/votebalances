@@ -27,6 +27,7 @@ static const std::map<std::string, std::string> mapAR =
         { "titomane", "RGKeqvDvbLrGTyEYpEZMJFNK1dW2GnxmnB" },
         { "tonyl", "RNWUrfBmdRmKogYq8ss73UCrP3ipmT54A8" },
 //      { "strob", "RStrobARDwHKBDntCa2Ko6oi91n4YMpgSB" },
+        { "mcrypt", "RLYYNmQcmC3vGYtGhyCt6HUXQL2kn7vQAa" },
 };
 
 static const std::map<std::string, std::string> mapEU = 
@@ -80,6 +81,7 @@ static const std::map<std::string, std::string> mapSH =
         { "titomane", "REjTMBjhhdnWkiMfBAjuBZUpBvTH4wwcwt" },
         { "workax", "RPvzKxby2fU5zm4q5ySrNdh3NbjgeMcw47" },
         { "zatjum", "RJUM5a3vnajE9fZ5piDGcxvDyryUAHxhKj" },
+        { "zatjum_2", "RGrUUMUTJmRU63xUH8sTHQ8qAkwyiyZATR" },
         { "strob", "RStrobSH68ke1eFmxNehVuJczTEpFX3C4f" },
         { "sheeba", "RR7CECKj4aT7BC7Exq6a5AteVoPRyHEFyx" },
         
