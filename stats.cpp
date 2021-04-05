@@ -23,7 +23,7 @@ static const std::map<std::string, std::string> mapAR =
         { "kolo", "RKCXF7EYaAJHmiyDKmubhQ88dYc7CbTZxx" },
         { "nutellalicka", "RRXLDNAmvSC848d6VqRGmNEugrsHx7mfS9" },
         { "pangz", "RHtRNLjyW8jvKQuMa4vHsNgzaE7kpynJRX" },
-        { "paro", "RScDpTu2m23qrufjpK5nh2M6M3x2L8pLuo" },
+//      { "paro", "RScDpTu2m23qrufjpK5nh2M6M3x2L8pLuo" },
         { "titomane", "RGKeqvDvbLrGTyEYpEZMJFNK1dW2GnxmnB" },
         { "tonyl", "RNWUrfBmdRmKogYq8ss73UCrP3ipmT54A8" },
 //      { "strob", "RStrobARDwHKBDntCa2Ko6oi91n4YMpgSB" },
