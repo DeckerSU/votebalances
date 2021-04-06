@@ -47,7 +47,7 @@ static const std::map<std::string, std::string> mapEU =
         { "block9", "RSmMfwnBZJtjqBjnEYF2dyCquXJvk1bK2Q" },
 //      { "strob", "RStrobEUa7sHUamRfaWyX8DN2bpKiq9YPZ" },
         { "madmax", "RLTvCWLwQyyoeoouVjdg7gvEAYNvSyypmC" },
-        
+        { "hastrup", "RR5ML3KMuvMZXkNDeB32DLWvVkkpQyuT32" },
 };
 
 static const std::map<std::string, std::string> mapNA = 
@@ -84,6 +84,7 @@ static const std::map<std::string, std::string> mapSH =
         { "zatjum_2", "RGrUUMUTJmRU63xUH8sTHQ8qAkwyiyZATR" },
         { "strob", "RStrobSH68ke1eFmxNehVuJczTEpFX3C4f" },
         { "sheeba", "RR7CECKj4aT7BC7Exq6a5AteVoPRyHEFyx" },
+        { "d4v", "RYK2RgXbdHhTyaYmLAAfhYbYwvMmgaG22h" },
         
 };
 
