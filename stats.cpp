@@ -48,6 +48,7 @@ static const std::map<std::string, std::string> mapEU =
 //      { "strob", "RStrobEUa7sHUamRfaWyX8DN2bpKiq9YPZ" },
         { "madmax", "RLTvCWLwQyyoeoouVjdg7gvEAYNvSyypmC" },
         { "hastrup", "RR5ML3KMuvMZXkNDeB32DLWvVkkpQyuT32" },
+        { "yurii-khi", "RFKQRyp2Rst9BdozzoqKnsRcUtiWN8cQny" },
 };
 
 static const std::map<std::string, std::string> mapNA = 
