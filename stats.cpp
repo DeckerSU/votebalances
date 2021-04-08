@@ -92,7 +92,8 @@ static const std::map<std::string, std::string> mapSH =
         { "sheeba", "RR7CECKj4aT7BC7Exq6a5AteVoPRyHEFyx" },
         { "d4v", "RYK2RgXbdHhTyaYmLAAfhYbYwvMmgaG22h" },
         { "mylo", "RARdqVRm3RWvii2kCWZBSteqqZQs7PsVj9" },
-        
+        { "kmdude", "RQX3U59fE2kS4KBZxCWhPaEhPbpTfdM2ef" },
+
 };
 
 /* Daemon Params */
