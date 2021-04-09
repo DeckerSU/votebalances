@@ -30,6 +30,8 @@ static const std::map<std::string, std::string> mapAR =
         { "mcrypt", "RLYYNmQcmC3vGYtGhyCt6HUXQL2kn7vQAa" },
         { "mrlynch", "RC2pD9ietgA27QMhgv8nn5pFo2v7HfmesF" },
         { "dathbezumniy", "RX2wKLEk6M9qp4tWPft2un9ysnFURA2a3y" },
+        { "goldenman", "RL9srwE4yafTRammxmGhzG8tVp6VkbKGg8" },
+
 };
 
 static const std::map<std::string, std::string> mapEU = 
