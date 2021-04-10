@@ -80,6 +80,7 @@ static const std::map<std::string, std::string> mapNA =
         { "pirate", "RTQZhmZn1YaBBGpKBxDy9aaHTipFCDCTUJ" },
         { "daemonfox", "RDAEmonF9avm7xau2pYWf3UamgHNXrkzpt" },
         { "cipi", "RGayMoe7ptHwmAfVcDsZPnrxM4EsW1REMy" },
+        { "mojojojo400", "RHkNZ2G8TwKRd5wmUXryKfykfeSWhVuRNY" },
 };
 
 static const std::map<std::string, std::string> mapSH = 
