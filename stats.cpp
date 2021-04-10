@@ -32,6 +32,7 @@ static const std::map<std::string, std::string> mapAR =
         { "dathbezumniy", "RX2wKLEk6M9qp4tWPft2un9ysnFURA2a3y" },
         { "goldenman", "RL9srwE4yafTRammxmGhzG8tVp6VkbKGg8" },
         { "starfleet", "RLQ3GrJstg3pgmvEU6hjfyYqbHuyqgTnWM" },
+        { "cipi", "RE1NaK7Bp5Xy127nbFLmu4QVxPPnQkoe4h" },
 };
 
 static const std::map<std::string, std::string> mapEU = 
@@ -55,6 +56,7 @@ static const std::map<std::string, std::string> mapEU =
         { "yurii-khi", "RFKQRyp2Rst9BdozzoqKnsRcUtiWN8cQny" },
         { "pirate", "RHs4FTLEYn7CcbLdRBNDbm6iNTUwxpj8ML" },
         { "ca333", "RFh6JRqPpnoxboXWufWWUFvpZ67DmMmcrz" },
+        { "cipi", "RTMSZ28BvFvy9eGE8FTSstX1APXMXimXdN" },
 };
 
 static const std::map<std::string, std::string> mapNA = 
@@ -76,6 +78,7 @@ static const std::map<std::string, std::string> mapNA =
         { "captainsparrow", "RYAtnKEpD6YgyXq2ssKRFjM2dfv3GnamUM" },
         { "pirate", "RTQZhmZn1YaBBGpKBxDy9aaHTipFCDCTUJ" },
         { "daemonfox", "RDAEmonF9avm7xau2pYWf3UamgHNXrkzpt" },
+        { "cipi", "RGayMoe7ptHwmAfVcDsZPnrxM4EsW1REMy" },
 };
 
 static const std::map<std::string, std::string> mapSH = 
@@ -91,7 +94,7 @@ static const std::map<std::string, std::string> mapSH =
         { "titomane", "REjTMBjhhdnWkiMfBAjuBZUpBvTH4wwcwt" },
         { "workax", "RPvzKxby2fU5zm4q5ySrNdh3NbjgeMcw47" },
         { "zatjum", "RJUM5a3vnajE9fZ5piDGcxvDyryUAHxhKj" },
-        { "zatjum_2", "RGrUUMUTJmRU63xUH8sTHQ8qAkwyiyZATR" },
+        { "zatjum_2", "RGrUUMUTJmRU63xUH8sTHQ8qAkwyiyZATR" }, // x2
         { "strob", "RStrobSH68ke1eFmxNehVuJczTEpFX3C4f" },
         { "sheeba", "RR7CECKj4aT7BC7Exq6a5AteVoPRyHEFyx" },
         { "d4v", "RYK2RgXbdHhTyaYmLAAfhYbYwvMmgaG22h" },
