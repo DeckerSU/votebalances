@@ -55,7 +55,6 @@ static const std::map<std::string, std::string> mapEU =
         { "yurii-khi", "RFKQRyp2Rst9BdozzoqKnsRcUtiWN8cQny" },
         { "pirate", "RHs4FTLEYn7CcbLdRBNDbm6iNTUwxpj8ML" },
         { "ca333", "RFh6JRqPpnoxboXWufWWUFvpZ67DmMmcrz" },
-
 };
 
 static const std::map<std::string, std::string> mapNA = 
@@ -76,6 +75,7 @@ static const std::map<std::string, std::string> mapNA =
         { "webworker01", "RLqnbAwfucQEcSzcBXEXAavLTtL1FrWxqJ" },
         { "captainsparrow", "RYAtnKEpD6YgyXq2ssKRFjM2dfv3GnamUM" },
         { "pirate", "RTQZhmZn1YaBBGpKBxDy9aaHTipFCDCTUJ" },
+        { "daemonfox", "RDAEmonF9avm7xau2pYWf3UamgHNXrkzpt" },
 };
 
 static const std::map<std::string, std::string> mapSH = 
@@ -97,7 +97,8 @@ static const std::map<std::string, std::string> mapSH =
         { "d4v", "RYK2RgXbdHhTyaYmLAAfhYbYwvMmgaG22h" },
         { "mylo", "RARdqVRm3RWvii2kCWZBSteqqZQs7PsVj9" },
         { "kmdude", "RQX3U59fE2kS4KBZxCWhPaEhPbpTfdM2ef" },
-
+        { "hyperstaking", "RQguCHyooUyrPpkWHHQ7S3enU12aLpaeN5" },
+        { "drkush", "RNeTapDAtWtgKyeBoBMmaD3Zw3HGvx9ze7" },
 };
 
 /* Daemon Params */
