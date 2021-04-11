@@ -33,6 +33,7 @@ static const std::map<std::string, std::string> mapAR =
         { "goldenman", "RL9srwE4yafTRammxmGhzG8tVp6VkbKGg8" },
         { "starfleet", "RLQ3GrJstg3pgmvEU6hjfyYqbHuyqgTnWM" },
         { "cipi", "RE1NaK7Bp5Xy127nbFLmu4QVxPPnQkoe4h" },
+        { "metaphilibert", "RMetaARvKiEj16LNdqG8QmxzankfCb9p2w" },
 };
 
 static const std::map<std::string, std::string> mapEU = 
@@ -106,6 +107,7 @@ static const std::map<std::string, std::string> mapSH =
         { "kmdude", "RQX3U59fE2kS4KBZxCWhPaEhPbpTfdM2ef" },
         { "hyperstaking", "RQguCHyooUyrPpkWHHQ7S3enU12aLpaeN5" },
         { "drkush", "RNeTapDAtWtgKyeBoBMmaD3Zw3HGvx9ze7" },
+        { "metaphilibert", "RMetaSHqEPvuAC1K1TWFx5WwNcMiqPFm8e" },
 };
 
 /* Daemon Params */
