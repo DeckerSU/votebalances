@@ -111,6 +111,7 @@ static const std::map<std::string, std::string> mapSH =
         { "hyperstaking", "RQguCHyooUyrPpkWHHQ7S3enU12aLpaeN5" },
         { "drkush", "RNeTapDAtWtgKyeBoBMmaD3Zw3HGvx9ze7" },
         { "metaphilibert", "RMetaSHqEPvuAC1K1TWFx5WwNcMiqPFm8e" },
+        { "kidcrypto81", "RBFGycnKKxgTBWK8Yxso8ygxrWrntJtdQg" },
 };
 
 /* Daemon Params */
