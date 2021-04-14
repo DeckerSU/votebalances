@@ -34,6 +34,7 @@ static const std::map<std::string, std::string> mapAR =
         { "starfleet", "RLQ3GrJstg3pgmvEU6hjfyYqbHuyqgTnWM" },
         { "cipi", "RE1NaK7Bp5Xy127nbFLmu4QVxPPnQkoe4h" },
         { "metaphilibert", "RMetaARvKiEj16LNdqG8QmxzankfCb9p2w" },
+        { "tokel", "RYb17fExy1FFTYDDdm8CU26oWr7MNW7Dib" },
 };
 
 static const std::map<std::string, std::string> mapEU = 
