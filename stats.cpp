@@ -21,7 +21,7 @@ static const std::map<std::string, std::string> mapAR =
         { "dudezmobi", "RA7VoAW811sZS6CPaM3CwS4VyNyLzmNcKy" },
         { "fediakash", "RJvm1a6SoGfjS6WDobLTPJEjHrAFHv7md1" },
         { "kolo", "RKCXF7EYaAJHmiyDKmubhQ88dYc7CbTZxx" },
-        { "nutellalicka", "RRXLDNAmvSC848d6VqRGmNEugrsHx7mfS9" },
+//      { "nutellalicka", "RRXLDNAmvSC848d6VqRGmNEugrsHx7mfS9" },
         { "pangz", "RHtRNLjyW8jvKQuMa4vHsNgzaE7kpynJRX" },
 //      { "paro", "RScDpTu2m23qrufjpK5nh2M6M3x2L8pLuo" },
         { "titomane", "RGKeqvDvbLrGTyEYpEZMJFNK1dW2GnxmnB" },
