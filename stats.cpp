@@ -36,7 +36,7 @@ static const std::map<std::string, std::string> mapAR =
         { "metaphilibert", "RMetaARvKiEj16LNdqG8QmxzankfCb9p2w" },
         { "tokel", "RYb17fExy1FFTYDDdm8CU26oWr7MNW7Dib" },
         { "etszombi", "RX1DiFJTrz86jEVJh4JzDJeVz9DQRxWPjG" },
-        { "marmarachain", "RG2eBcaSFUkjukBCZBr8XgpzfYBHb3v72M" },
+//      { "marmarachain", "RG2eBcaSFUkjukBCZBr8XgpzfYBHb3v72M" },
 };
 
 static const std::map<std::string, std::string> mapEU = 
@@ -68,6 +68,7 @@ static const std::map<std::string, std::string> mapEU =
         { "komodopioneers", "RLDs9ZTtzAQy8Y7eoMht7oMFuciECiqCEi" },
         { "etszombi", "RP82ogUu9L7BHuUiv7FnXNgDFmQ3J4hmdA" },
         { "jusoaresf", "RHKLjkNyDfnvakz819Qy76WzbP5trh8G6X" },
+        { "marmarachain", "RG2eBcaSFUkjukBCZBr8XgpzfYBHb3v72M" },
 };
 
 static const std::map<std::string, std::string> mapNA = 
