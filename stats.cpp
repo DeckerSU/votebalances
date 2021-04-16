@@ -94,6 +94,7 @@ static const std::map<std::string, std::string> mapNA =
         { "mojojojo400", "RHkNZ2G8TwKRd5wmUXryKfykfeSWhVuRNY" },
         { "node-9", "RLvYMe7oB5zsWks4y4ue97xGYjEbfERdT6" },
         { "who-biz", "REyFgygqWpDtYjKhz214CkA6hrA27d6cxX" },
+        { "chicagodan", "RRtsfRPBjzdhhu7YAr1NLdZPq67QeS3dVf" },
 };
 
 static const std::map<std::string, std::string> mapSH = 
