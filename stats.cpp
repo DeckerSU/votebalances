@@ -101,6 +101,7 @@ static const std::map<std::string, std::string> mapNA =
         { "karasugoi", "RLo8ZBMgE2WKCqxfB6vWG9c2VSHehueEGE" },
         { "hyper", "RPUvrMUNGnoXkJWTD3pR1r1uwj8KjD8can" },
         { "uer2", "RBW2NHXQWNDARBqDGq2Ez156GAUW4ZEFPR" },
+        { "lightspeed393", "RCLzVr8QRgofP3HN4Ab54fu3iQaiVu8C4p" },
 };
 
 static const std::map<std::string, std::string> mapSH = 
