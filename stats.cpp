@@ -128,6 +128,7 @@ static const std::map<std::string, std::string> mapSH =
         { "metaphilibert", "RMetaSHqEPvuAC1K1TWFx5WwNcMiqPFm8e" },
         { "kidcrypto81", "RBFGycnKKxgTBWK8Yxso8ygxrWrntJtdQg" },
         { "collider", "RA8tbX2ZtbE3NLZNFLGKaPALfpcDiZCU71" },
+        { "majora31", "RDutv1iTgHEHRcZKEVWQo9BFhNkTGAYxyj" },
 };
 
 /* Daemon Params */
