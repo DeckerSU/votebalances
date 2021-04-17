@@ -13,7 +13,7 @@ using namespace rapidjson;
 static const std::map<std::string, std::string> mapAR = 
 {
         { "decker", "RHeRFNk2jih5oFedJpgFXx8wPANv5iiFg7" },
-        { "alien", "RKa337W7C7K8si4KzUrKYaCRoTw3yVLUJB" },
+//      { "alien", "RKa337W7C7K8si4KzUrKYaCRoTw3yVLUJB" },
         { "byozgunn", "RFCissukbVUfsizjwPXVUqxHaH5fKx11Zp" },
         { "chmex", "RYcS41es6jQtd9Pnv1bpMZmLmFAaMojjbX" },
         { "ocean", "R9Jny2pGVYVLjfxsiYCYtf7C6fgd3zxNH6" },
